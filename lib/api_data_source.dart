@@ -8,8 +8,7 @@ class ApiDataSource{
     return BaseNetwork.getList("matches");
   }
 
-  Future<Map<String, dynamic>> loadDetail(int idDiterima){
-    String id = idDiterima.toString();
+  Future<Map<String, dynamic>> loadDetail(String id){
     return BaseNetwork.get("matches/$id");
   }
 }

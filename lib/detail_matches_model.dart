@@ -44,6 +44,7 @@ class DetailMatchesModel {
         updatedAt = json['updatedAt'] as String?,
         winner = json['winner'] as String?;
 
+
   Map<String, dynamic> toJson() => {
     'id' : id,
     'venue' : venue,
@@ -57,7 +58,7 @@ class DetailMatchesModel {
     'createdAt' : createdAt,
     'date' : date,
     'updatedAt' : updatedAt,
-    'winner' : winner
+    'winner' : winner,
   };
 }
 
